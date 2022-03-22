@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push rafdev0904/nodejsphp'
+				sh 'docker push rafdev0904/nodejsphp .'
 			}
 		}
 	}
