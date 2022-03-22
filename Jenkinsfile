@@ -10,7 +10,7 @@ pipeline{
 		
 		stage('build') {
 			steps {
-				sh'docker-compose build'
+				sh'docker-compose build rafdev0904/nodejsphp:latest'
 				
 			}
 		}
@@ -25,7 +25,6 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh'docker tag afdev0904/nodejsphp:latest'
 				sh 'docker push rafdev0904/nodejsphp'
 			}
 		}
