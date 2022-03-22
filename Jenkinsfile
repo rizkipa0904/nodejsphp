@@ -21,11 +21,11 @@ pipeline{
 				sh 'docker login -u rafdev0904 -p Tkjmhd123'
 			}
 		}
-
+	
 		stage('Push') {
 
 			steps {
-				sh 'docker push rafdev0904/nodejsphp:latest'
+				sh 'docker push rafdev0904/nodejs'
 			}
 		}
 	}
